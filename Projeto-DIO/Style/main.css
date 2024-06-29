@@ -1,6 +1,8 @@
 :root{
     --vermelho: #E50914;
     --preto: #141414;
+    --cor-fonte: #aaa;
+    --cor-fonte-hover: #fff;
 }
 
 *{
@@ -9,9 +11,12 @@
     box-sizing: border-box;
 }
 
+
+/* elementos base*/
 body{
     background-color: var(--preto);
     font-family: 'Times New Roman', Times, serif;
+    color: var(--cor-fonte);
 }
 
 header .logo{
@@ -21,7 +26,8 @@ header .logo{
 header .container{
     display: flex;
     align-items: center;
-    padding: 0 53.674px 0 53.674px;
+    padding: 0 4% 0 4%;
+    height: 70px;
 
 }
 
@@ -31,12 +37,12 @@ header .navegacao{
 
 header nav a{
     text-decoration: none;
-    color: #aaa;
+    color: var(--cor-fonte);
     margin-right: 10px;
 }
 
 header nav a:hover{
-    color: #fff;
+    color: var(--cor-fonte-hover);
 }
 
 header .secondary-menu{
@@ -48,10 +54,58 @@ header .secondary-menu{
 
 header .secondary-menu a{
     text-decoration: none;
-    color: #aaa;
+    color: var(--cor-fonte);
     margin-right: 10px;
 }
 
 header .secondary-menu a:hover{
-    color: #fff;
+    color: var(--cor-fonte-hover);
+}
+
+/*filme - principal*/
+.filme-principal{
+    font-size: 16px;
+    background: linear-gradient(rgba(0,0,0, .50), rgba(0,0,0, .50)100%), url('/Projeto-DIO/IMG/series/the-boys-capa.jpg');
+    height: 500px;
+    background-size: cover;
+    color: white;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: flex-start;
+}
+
+.filme-principal .description{
+    margin-top: 10px;
+    margin-bottom: 40px;
+    margin-left: 2%;
+}
+
+.title-serie{
+    margin-top: 15%;
+    font-size: 40px;
+    font-family: 'Trebuchet MS', Arial, sans-serif;
+    margin-left: 2%;
+}
+
+.botao{
+    background-color: rgba(0, 0, 0, .50);
+    border: none;
+    color: white;
+
+    padding: 15px 30px;
+    margin-right: 15px;
+    font-size: 12px;
+    cursor: pointer;
+    transition: .3s ease all;
+    margin-left: 2%;
+}
+
+.botao:hover{
+    background-color: white;
+    color: black;
+}
+
+.botao i{
+    margin-right: 5px;
 }
