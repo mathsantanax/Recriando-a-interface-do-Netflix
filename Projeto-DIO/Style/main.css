@@ -75,17 +75,22 @@ header .secondary-menu a:hover{
     align-items: flex-start;
 }
 
+.filme-principal .container{
+    margin-left: 2%;
+    width: 70%;
+}
+
 .filme-principal .description{
     margin-top: 10px;
     margin-bottom: 40px;
-    margin-left: 2%;
+
 }
 
 .title-serie{
     margin-top: 15%;
     font-size: 40px;
     font-family: 'Trebuchet MS', Arial, sans-serif;
-    margin-left: 2%;
+
 }
 
 .botao{
@@ -98,7 +103,12 @@ header .secondary-menu a:hover{
     font-size: 12px;
     cursor: pointer;
     transition: .3s ease all;
-    margin-left: 2%;
+
+    border-radius: 5px;
+}
+
+.assistir-agora{
+    width: 146px;
 }
 
 .botao:hover{
